@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: #f0f0f0;
+}
+
+body {
+    font-family: 'Vesper Libre', serif;
+    color:#CE0F3D;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    width: 90%;
+    margin: 15px auto 3px auto;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #CE0F3D;
+    font-size: 25px;
+    margin: 7px 10px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.strapline-container {
+    width: 100%;
+    height: 85%;
+    margin: auto auto;
+    text-align: center;
+}
+
+.strapline-container .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(./images/cover-img.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.main-strapline {
+    color: #CE0F3D;
+    font-size: 7vw;
+    margin: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    position: relative;
+}
+
+.second-strapline {
+    color: #ffffff;
+    font-size: 200%;
+    font-style: italic;
+    z-index: 1;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color:#CE0F3D;
+    text-transform: uppercase;
+    font-size: 240%;
+    margin-bottom: 25px;
+}
+
+.about-section {
+    margin: 100px auto;
+    width: 100vw;
+}
+@media only screen and (min-width: 1000px) {
+    .about-container {
+        width: 85%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-box {
+        width: 45%;
+        text-align: justify;
+        line-height: 220%;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+    }
+
+    .right-box {
+        width: 40%;
+        margin-left: 6%;
+    }
+}
+
+.top-row, .bottom-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-image-one {
+    width: 50%;
+    height: 240px;
+    background-image: url(./images/grid1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-image-two {
+    width: 50%;
+    height: 240px;
+    background-image: url(./images/grid4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-image-three {
+    width: 50%;
+    height: 240px;
+    background-image: url(./images/grid3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-image-four {
+    width: 50%;
+    height: 240px;
+    background-image: url(./images/grid2.jpg);
+    background-size: cover;
+    background-position: center 85%;
+}
+
+@media only screen and (max-width: 1000px){
+    .about-container{
+        width: 85%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-box {
+        width: 75vw;
+        margin: auto;
+    }
+
+    .left-box {
+        text-align: justify;
+        margin: 10px auto;
+        line-height: 220%;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+        width: 80%;
+    }
+}
+
+.portfolio-section {
+    width: 100vw;
+    margin: 100px auto;
+}
+
+.image-container {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .row-one, .row-two, .row-three {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .grid-item {
+        width: 30%;
+        height: 25vh;
+        margin: 15px;
+        background-size: cover;
+        background-position: absolute;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .row-one, .row-two, .row-three {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .grid-item {
+        width: 90%;
+        height: 30vh;
+        margin: 15px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.image-description {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover .image-description{
+    opacity: 1;
+}
+
+.portfolio-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#project-one {
+    background-image: url(./images/imperialdounuts.png);
+}
+
+#project-two {
+    background-image: url(./images/crud.jpeg);
+}
+
+#project-three {
+    background-image: url(./images/WIP.jpg);
+}
+
+#project-four {
+    background-image: url(./images/WIP.jpg);
+}
+
+#project-five {
+    background-image: url(./images/WIP.jpg);
+}
+
+#project-six {
+    background-image: url(./images/WIP.jpg);
+}
+
+#project-seven {
+    background-image: url(./images/WIP.jpg);
+}
+
+#project-eight {
+    background-image: url(./images/WIP.jpg);
+}
+
+#project-nine {
+    background-image: url(./images/WIP.jpg);
+}
+
+.skills-section {
+    width: 100vw;
+    margin: 100px auto;
+}
+
+.skills-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-div {
+    width: 30%;
+    height: 40vh;
+    margin: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 150%;
+}
+
+.contact-section {
+    width: 100vw;
+    min-height: 35vh;
+    background-color: #CE0F3D;
+    text-align: center;
+    color: #B0B7BC;
+}
+
+.contact-title {
+    margin: 25px 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 250%;
+}
+
+.email {
+    font-size: 130%;
+}
+
+.social-media-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.social-media-icon {
+    margin: 0px 7.5px;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
